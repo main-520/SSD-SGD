@@ -9,7 +9,3 @@ The pdf file (convergence-analysis.pdf) is provided to make convegence analysis 
 * No modification is made to the process of parameter server, it conducts the update operation on receiving the gradients from workers, and sends back the updated parameters on receiving the Pull requests from the workers.
 * The calculated gradients are sent to the servers every iteration, this is similar to the feature of Synchronous SGD; Each worker will conduct local update operations to get new local weights instead of waitting for the updated parameters from the servers, this is the feature of Asynchronous SGD. The gloabl parameters are pulled back from the servers every k iterations, where k is the delay steps.
 * Users can specify the algorithm for local update through the option "--optimizer_local" when lancuhing the distributed training work. 
-
-
-# Ask Questions
-Please send emails to xuyemaovip@nudt.edu.cn for more details.
